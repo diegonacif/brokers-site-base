@@ -10,11 +10,11 @@ interface BannerProps {
   headerHeight?: number;
 }
 
-export default function Banner({ imagem, titulo, subtitulo, ctaTexto, ctaLink, headerHeight }: BannerProps) {
+export default function Banner({ imagem, titulo, subtitulo, ctaTexto, ctaLink }: BannerProps) {
   return (
     <div 
-      className="relative w-full min-w-[100vw]"
-      style={{ minHeight: `calc(100vh - ${headerHeight}px)` }}
+      className="relative w-full min-w-[100vw] min-h-[100vh]"
+      // style={{ minHeight: `calc(100vh - ${headerHeight}px)` }}
     >
       {/* Imagem de Fundo */}
       <Image
@@ -25,7 +25,7 @@ export default function Banner({ imagem, titulo, subtitulo, ctaTexto, ctaLink, h
         className="z-0"
       />
       {/* Conteúdo Sobre a Imagem */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-[#e6e6fa] bg-black/50 z-10">
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-[#e6e6fa] bg-black/40 z-10">
         <h1 className="text-4xl md:text-6xl text-[#e6e6fa] font-bold mb-4">{titulo}</h1>
         <p className="text-xl md:text-2xl mb-8">{subtitulo}</p>
         <Link

@@ -17,7 +17,7 @@ export default function Home() {
       <Banner
         imagem="/images/stock/1746118926037.jpg"
         titulo="Encontre o Imóvel dos Seus Sonhos"
-        subtitulo="Com a ajuda do corretor mais experiente da cidade"
+        subtitulo="Com a ajuda da corretora mais experiente de Natal"
         ctaTexto="Encontre seu Imóvel"
         ctaLink="/buscador"
         headerHeight={96}

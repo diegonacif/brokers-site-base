@@ -3,12 +3,30 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --brand1: #e6e6fa; /* Cor primária */
+  --brand2: #a87ca0; /* Cor secundária */
+  --brand3: #5e2b6d; /* Cor terciária */
+  --brand4: #2a0e3c; /* Cor quaternária */
+  --brand-accent: #fbbc05; /* Cor de destaque */
+  --text: #202124; /* Cor do texto */
+  --header-bg: var(--brand1); /* Fundo do header */
+  --footer-bg: #f8f9fa; /* Fundo do footer */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-montserrat);
+
+  --color-brand1: var(--brand1); /* Cor primária */
+  --color-brand2: var(--brand2); /* Cor secundária */
+  --color-brand3: var(--brand3); /* Cor terciária */
+  --color-brand4: var(--brand4); /* Cor quaternária */
+  --color-brand-accent: var(--brand-accent); /* Cor de destaque */
+  --color-text: var(--text); /* Cor do texto */
+  --color-header-bg: var(--header-bg); /* Fundo do header */
+  --color-footer-bg: var(--footer-bg); /* Fundo do footer */
 }
 
 @media (prefers-color-scheme: dark) {
